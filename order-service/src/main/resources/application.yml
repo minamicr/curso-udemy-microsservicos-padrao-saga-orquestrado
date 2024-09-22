@@ -10,7 +10,6 @@ spring:
     consumer:
       group-id: order-group
       auto-offset-reset: latest
-
   data:
     mongodb:
       database: admin

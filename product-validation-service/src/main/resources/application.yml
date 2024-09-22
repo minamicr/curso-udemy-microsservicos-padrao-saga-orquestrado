@@ -6,7 +6,7 @@ spring:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
       orchestrator: orchestrator
-      product-validation-success: product-validation-success
+      product-validation-sucess: product-validation-sucess
       product-validation-fail: product-validation-fail
     consumer:
       group-id: product-validation-group
@@ -25,8 +25,3 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-logging:
-  level:
-    org:
-      apache:
-        kafka: OFF

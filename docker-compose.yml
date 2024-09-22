@@ -32,7 +32,7 @@ services:
     networks:
       - orchestrator-saga
     environment:
-      - POSTGRES_DB=product-db
+      - POSTGRES_DB=payment-db
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
@@ -44,7 +44,7 @@ services:
     networks:
       - orchestrator-saga
     environment:
-      - POSTGRES_DB=product-db
+      - POSTGRES_DB=inventory-db
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
