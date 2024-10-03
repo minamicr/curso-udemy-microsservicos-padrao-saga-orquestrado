@@ -1,8 +1,6 @@
 package br.com.microservices.orchestrated.productvalidationservice.core.dto;
 
 import br.com.microservices.orchestrated.productvalidationservice.core.enums.EnumSagaStatus;
-import br.com.microservices.orchestrated.orderservice.core.document.History;
-import br.com.microservices.orchestrated.orderservice.core.document.Order;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

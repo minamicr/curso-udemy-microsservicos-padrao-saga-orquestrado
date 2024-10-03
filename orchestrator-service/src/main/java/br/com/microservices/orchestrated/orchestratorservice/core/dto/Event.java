@@ -2,8 +2,6 @@ package br.com.microservices.orchestrated.orchestratorservice.core.dto;
 
 import br.com.microservices.orchestrated.orchestratorservice.core.enums.EnumEventSource;
 import br.com.microservices.orchestrated.orchestratorservice.core.enums.EnumSagaStatus;
-import br.com.microservices.orchestrated.orderservice.core.document.History;
-import br.com.microservices.orchestrated.orderservice.core.document.Order;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
