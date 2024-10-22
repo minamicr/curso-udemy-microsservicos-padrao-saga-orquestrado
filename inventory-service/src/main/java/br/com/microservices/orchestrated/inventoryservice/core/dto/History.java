@@ -1,10 +1,10 @@
-package br.com.microservices.orchestrated.inventoryservice.dto;
+package br.com.microservices.orchestrated.inventoryservice.core.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import br.com.microservices.orchestrated.inventoryservice.enums.EnumSagaStatus;
+import br.com.microservices.orchestrated.inventoryservice.core.enums.EnumSagaStatus;
 
 import java.time.LocalDateTime;
 
