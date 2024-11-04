@@ -25,12 +25,12 @@ public class SagaExecutionController {
         if (isEmpty(event.getStatus()) || isEmpty(event.getStatus())) {
             throw new ValidationException("Source and status must be informed.");
         }
-        var topic = findTopicBySourceAnDStatus(event);
+        var topic = findTopicBySourceAndStatus(event);
         logCurrentSaga(event, topic);
         return topic;
     }
 
-    private EnumTopics findTopicBySourceAnDStatus(Event event) {
+    private EnumTopics findTopicBySourceAndStatus(Event event) {
         return (EnumTopics) Arrays.stream(SAGA_HANDLER)
                 .filter(row -> isEventSourceAndStatusValid(event, row))
                 .map(i -> i[TOPIC_INDEX])

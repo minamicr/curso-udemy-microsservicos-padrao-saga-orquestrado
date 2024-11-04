@@ -101,7 +101,7 @@ public class InventoryService {
     private void handleSuccess(Event event) {
         event.setStatus(EnumSagaStatus.SUCCESS);
         event.setSource(CURRENT_SOURCE);
-        addHistory(event, "Payment realized successfully!");
+        addHistory(event, "Inventory update realized successfully!");
     }
 
     private void addHistory(Event event, String message) {
